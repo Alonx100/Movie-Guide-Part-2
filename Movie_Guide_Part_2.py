@@ -10,7 +10,6 @@ def movies():
             movie = movie.replace("\n","")
             List.append(movie)
     return List
-movies()
 
 def intro():
 
@@ -67,8 +66,6 @@ intro()
 
 List=movies()
 
-Number=display(List)
-
 Command = input("\nWhat do you want to do? ")
 
 while Command.lower() != "exit":
@@ -80,6 +77,7 @@ while Command.lower() != "exit":
         Command = input("\nWhat do you want to do? ")
 
     elif Command.lower() == "del":
+        Number=display(List)
         delete(List,Number)
         Command = input("\nWhat do you want to do? ")
 
